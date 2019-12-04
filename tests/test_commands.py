@@ -1,9 +1,9 @@
 from mock import DEFAULT, Mock, patch
+from six import StringIO
 from unittest import TestCase
 
 from django.core.management.base import CommandError
 from django.core.management import call_command
-from django.utils.six import StringIO
 
 from django_elasticsearch_dsl import Index
 from django_elasticsearch_dsl.management.commands.search_index import Command

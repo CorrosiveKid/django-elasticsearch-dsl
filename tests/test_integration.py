@@ -1,10 +1,10 @@
 from datetime import datetime
 import os
 import unittest
+from six import StringIO
 
 from django.core.management import call_command
 from django.test import TestCase
-from django.utils.six import StringIO
 from django.utils.translation import ugettext_lazy as _
 
 from elasticsearch_dsl import Index as DSLIndex

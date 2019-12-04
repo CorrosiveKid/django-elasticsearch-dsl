@@ -2,10 +2,10 @@ from collections import defaultdict
 from copy import deepcopy
 
 from itertools import chain
+from six import itervalues, iterkeys, iteritems
 
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.exceptions import ImproperlyConfigured
-from django.utils.six import itervalues, iterkeys, iteritems
 from elasticsearch_dsl import Field, AttrDict
 
 from django_elasticsearch_dsl.exceptions import RedeclaredFieldError
